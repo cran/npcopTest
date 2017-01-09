@@ -1,0 +1,8 @@
+useDynLib(npcopTest)
+#importFrom(npcp,bOptEmpProc)
+export(kn)
+export(CopTestdm)
+importFrom("stats", "ecdf", "rnorm")
+
+
+
