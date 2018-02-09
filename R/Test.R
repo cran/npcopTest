@@ -1,8 +1,3 @@
-parzen<-function(x)
-{
-(1-6*x^2+6*abs(x)^3)*(abs(x)<=0.5) + 2*(1-abs(x))^3*(0.5<abs(x) & abs(x)<=1)
-}
-
 rankit<-function(x){
   x=as.matrix(x)
   if(ncol(x)==1) x<-t(x)
@@ -26,6 +21,7 @@ for(j in 1:d)
 m[j]<-which.max(s[,j])
 min(m)
 }
+
 
 
 kn<-function(X,b)
